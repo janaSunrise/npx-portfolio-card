@@ -43,7 +43,7 @@ const data = {
     hashnode: chalk.hex('#C589E8')("https://thedevden.hashnode.dev"),
     linkedin: chalk.hex('#f8c471')("https://linkedin.com/in/SunritJana"),
     website: chalk.hex('#9FFFCB')("https://sunritjana.now.sh"),
-    npx: chalk.hex('#A1AB00')("npx sunrit"),
+    npx: chalk.hex('#06D6A0')("npx sunrit"),
 
     labelTitle: chalk.hex('#6a8ed2').bold("    Title:"),
     labelFact: chalk.hex('#2bfbaa').bold("     Fun Fact:"),
