@@ -1,6 +1,6 @@
 {
   "name": "sunrit",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "A portfolio card to know more about me (Sunrit Jana)",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,6 @@
   },
   "scripts": {
     "dev": "nodemon index.js",
-    "publish": "npm version patch & npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
