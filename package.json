@@ -1,9 +1,11 @@
 {
   "name": "sunrit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A portfolio card to know more about me (Sunrit Jana)",
   "main": "index.js",
-  "bin": "./index.js",
+  "bin": {
+    "sunrit": "index.js"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "publish": "npm version patch & npm publish",
