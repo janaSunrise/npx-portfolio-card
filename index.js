@@ -48,7 +48,7 @@ const data = {
     labelTitle: chalk.hex('#6a8ed2').bold("    Title:"),
     labelFact: chalk.hex('#2bfbaa').bold("     Fun Fact:"),
     labelEmail: chalk.hex('#12c2e9').bold("          Email:"),
-    labelDiscord: chalk.hex('#8562A3').bold("        Discord:"),
+    labelDiscord: chalk.hex('#9400D3').bold("        Discord:"),
     labelTwitter: chalk.hex('#629DFF').bold("        Twitter:"),
     labelGitHub: chalk.hex('#9E9E9E').bold("         GitHub:"),
     labelHashnode: chalk.hex('#A959FF').bold("       Hashnode:"),
@@ -75,14 +75,14 @@ const me = boxen(
         ``,
         `${data.labelCard}  ${data.npx}`,
         ``,
-        `${chalk.bold(
+        `${chalk.hex('#08e8de').bold(
             "Hi there! I'm Sunrit. A passionate ML developer, "
         )}`,
-        `${chalk.bold("Hacker and Web developer from India, and I love to ")}`,
-        `${chalk.bold(
+        `${chalk.hex('#08e8de').bold("Hacker and Web developer from India, and I love to ")}`,
+        `${chalk.hex('#08e8de').bold(
             "learn things, explore and work on them! "
         )}`,
-        `${chalk.bold(
+        `${chalk.hex('#08e8de').bold(
             "Toss me an email or twitter DM if you want to contact or work!"
         )}`
     ].join("\n"),
