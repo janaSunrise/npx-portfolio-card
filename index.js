@@ -34,6 +34,7 @@ const questions = [{
 const data = {
     name: chalk.bold.green("                        Sunrit Jana ⬢"),
     handle: chalk.white("@janaSunrise"),
+    title: chalk.hex('#6495ED')('ML and Web developer and a cybersecurity enthusiast.'),
     fact: chalk.hex('#00FFFF')('I love watching animes and learning new things!'),
     email: chalk.hex('#00FFFF')('mailto:warriordefenderz@gmail.com'),
     discord: chalk.hex('#ffe05a')('https://discord.com/users/711194921683648523'),
@@ -44,6 +45,7 @@ const data = {
     website: chalk.hex('#00AB9E')("https://sunritjana.now.sh"),
     npx: chalk.hex('#A1AB00')("npx sunrit"),
 
+    labelTitle: chalk.hex('#6a8ed2').bold("    Title:"),
     labelFact: chalk.hex('#2bfbaa').bold("     Fun Fact:"),
     labelEmail: chalk.hex('#12c2e9').bold("          Email:"),
     labelDiscord: chalk.hex('#8562A3').bold("        Discord:"),
@@ -58,6 +60,8 @@ const data = {
 const me = boxen(
     [
         `${data.name}`,
+        ``,
+        `${data.labelTitle}  ${data.title}`,
         ``,
         `${data.labelFact}  ${data.fact}`,
         ``,
