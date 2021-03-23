@@ -1,0 +1,34 @@
+{
+  "name": "npx-portfolio-card",
+  "version": "1.0.0",
+  "description": "A portfolio card about Sunrit Jana",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janaSunrise/npx-portfolio-card.git"
+  },
+  "keywords": [
+    "npx-card",
+    "portfolio-card"
+  ],
+  "author": "Sunrit Jana",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/janaSunrise/npx-portfolio-card/issues"
+  },
+  "homepage": "https://github.com/janaSunrise/npx-portfolio-card#readme",
+  "dependencies": {
+    "boxen": "^5.0.0",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "inquirer": "^8.0.0",
+    "open": "^8.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
