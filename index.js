@@ -88,9 +88,9 @@ const me = boxen(
     ].join("\n"),
     {
         margin: 1,
-        float: 'center',
         padding: 1,
-        borderStyle: "single",
+        float: 'center',
+        borderStyle: "bold",
         borderColor: "blue"
     }
 );
