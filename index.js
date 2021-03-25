@@ -8,29 +8,6 @@ const open = require("open");
 // Clear the console
 clear();
 
-// Inquirer prompt
-const prompt = inquirer.createPromptModule();
-
-// Prompt questions
-const questions = [{
-    type: "list",
-    name: "action",
-    message: "What do you want to do?",
-    choices: [
-        {
-            name: `Toss me an ${chalk.blue.bold("email")}?`,
-            value: () => {
-                open("mailto:warriordefenderz@gmail.com");
-                console.log("\nLooking forward to hearing your message and replying to you!\n");
-            }
-        },
-        {
-            name: "Exit",
-            value: () => { console.log("See you later! Have a nice day\n"); }
-        }
-    ]
-}];
-
 const data = {
     name: chalk.bold.green("                        Sunrit Jana ⬢"),
     handle: chalk.white("@janaSunrise"),
@@ -106,6 +83,36 @@ const tip = [
     '',
 ].join("\n");
 console.log(tip);
+
+// Inquirer prompt
+const prompt = inquirer.createPromptModule();
+
+// Prompt questions
+const questions = [{
+    type: "list",
+    name: "action",
+    message: "What do you want to do?",
+    choices: [
+        {
+            name: `Toss me an ${chalk.blueBright.bold("email")}📩?`,
+            value: () => {
+                open(`mailto:${data.email}`);
+                console.log("\nLooking forward to hearing your message and replying to you!\n");
+            }
+        },
+        {
+            name: `Visit my ${chalk.cyanBright.bold("site")}📩?`,
+            value: () => {
+                open(data.website);
+                console.log("\nThanks for the visit to my site!\n");
+            }
+        },
+        {
+            name: "Exit 👋🏻",
+            value: () => { console.log("👋🏻 See you later! Have a nice day\n"); }
+        }
+    ]
+}];
 
 // Handle prompts
 prompt(questions).then(answer => answer.action());
