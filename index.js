@@ -94,22 +94,22 @@ const questions = [{
     message: "What do you want to do?",
     choices: [
         {
-            name: `Toss me an ${chalk.blueBright.bold("email")}📩?`,
+            name: `Toss me an ${chalk.blueBright.bold("email")}? 📩`,
             value: () => {
                 open(`mailto:${data.email}`);
                 console.log("\nLooking forward to hearing your message and replying to you!\n");
             }
         },
         {
-            name: `Visit my ${chalk.cyanBright.bold("site")}📩?`,
+            name: `Visit my ${chalk.cyanBright.bold("site")}? 🚀`,
             value: () => {
                 open(data.website);
                 console.log("\nThanks for the visit to my site!\n");
             }
         },
         {
-            name: "Exit 👋🏻",
-            value: () => { console.log("👋🏻 See you later! Have a nice day\n"); }
+            name: "Exit! 👋",
+            value: () => { console.log("👋 See you later! Have a nice day\n"); }
         }
     ]
 }];
