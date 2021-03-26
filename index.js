@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const boxen = require("boxen");
 const chalk = require("chalk");
+const figlet = require("figlet");
 const inquirer = require("inquirer");
 const clear = require("clear");
 const open = require("open");
@@ -8,8 +9,79 @@ const open = require("open");
 // Clear the console
 clear();
 
+const between = (min, max) => {
+    return Math.floor(
+        Math.random() * (max - min + 1) + min
+    )
+}
+
+const generate = (text) => {
+    const theme = {
+        "colors": [
+            "#FFFFFF",
+            "#7285B7",
+            "#FF9DA4",
+            "#FFC58F",
+            "#FFEEAD",
+            "#D1F1A9",
+            "#99FFFF",
+            "#BBDAFF",
+            "#EBBBFF",
+            "#718c00",
+            "#c82829",
+            "#3e999f",
+            "#6796e6",
+            "#cd9731",
+            "#f44747",
+            "#b267e6"
+        ],
+        "background":"#002451",
+        "foreground":"#ffffff"
+    };
+
+    let horizontalLayout = "default";
+    let verticalLayout = "default";
+    let font = "ANSI Shadow";
+
+    let coloredData = "";
+    let colorsIndex = 0;
+    let data;
+
+    try {
+        data = figlet.textSync(text, {
+            font: font,
+            horizontalLayout: horizontalLayout,
+            verticalLayout: verticalLayout,
+        });
+    } catch (error) {
+        return error
+    }
+    for (let i = 0; i < data.length; i++) {
+        let character = data.charAt(i)
+        if (character !== "_") {
+            if (data.charAt(i - 1) === "_" || data.charAt(i - 1) === " " || data.charAt(i - 1) === ".") {
+                colorsIndex++;
+                if (colorsIndex >= theme.colors.length) {
+                    colorsIndex = 0;
+                }
+            }
+            coloredData += chalk.hex(theme.colors[colorsIndex]).bgHex(theme.background)(data.charAt(i))
+        } else {
+            coloredData += chalk.hex(theme.foreground).bgHex(theme.background)(data.charAt(i))
+        }
+    }
+    return coloredData;
+}
+
+let name;
+if(between(0, 6) === 6){
+    name = chalk.bold(generate("                        Sunrit Jana ⬢"));
+} else {
+    name = chalk.bold.blueBright("                        Sunrit Jana ⬢");
+}
+
 const data = {
-    name: chalk.bold.green("                        Sunrit Jana ⬢"),
+    name: name,
     handle: chalk.white("@janaSunrise"),
     title: chalk.hex('#6495ED')('ML and Web developer and a cybersecurity enthusiast.'),
     fact: chalk.hex('#00FFFF')('I love watching animes and learning new things!'),
