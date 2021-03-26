@@ -96,14 +96,14 @@ const questions = [{
         {
             name: `Toss me an ${chalk.blueBright.bold("email")}? 📩`,
             value: () => {
-                open(`mailto:${data.email}`);
+                open("mailto:warriordefenderz@gmail.com");
                 console.log("\nLooking forward to hearing your message and replying to you!\n");
             }
         },
         {
             name: `Visit my ${chalk.cyanBright.bold("site")}? 🚀`,
             value: () => {
-                open(data.website);
+                open("https://sunritjana.now.sh");
                 console.log("\nThanks for the visit to my site!\n");
             }
         },
