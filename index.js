@@ -1,19 +1,13 @@
 #!/usr/bin/env node
 const boxen = require("boxen");
 const chalk = require("chalk");
+const clear = require("clear");
 const figlet = require("figlet");
 const inquirer = require("inquirer");
-const clear = require("clear");
 const open = require("open");
 
 // Clear the console
 clear();
-
-const between = (min, max) => {
-    return Math.floor(
-        Math.random() * (max - min + 1) + min
-    )
-}
 
 const generate = (text) => {
     const theme = {
@@ -74,7 +68,7 @@ const generate = (text) => {
 }
 
 let name;
-if(between(0, 6) === 6){
+if(process.stdout.columns >= 95){
     name = chalk.bold(generate("                        Sunrit Jana ⬢"));
 } else {
     name = chalk.bold.blueBright("                        Sunrit Jana ⬢");
@@ -153,8 +147,18 @@ const tip = [
         "cmd/ctrl + click"
     )} on the links above to open them in your broswer.`,
     '',
-].join("\n");
-console.log(tip);
+];
+
+if(process.stdout.columns < 95){
+    tip.push(...[
+        `Easter TIP: ${chalk.cyanBright.bold(
+            "Adjust your terminal to keep it more than 95 columns to get an awesome art."
+        )}`,
+        ''
+    ]);
+}
+
+console.log(tip.join("\n"));
 
 // Inquirer prompt
 const prompt = inquirer.createPromptModule();
