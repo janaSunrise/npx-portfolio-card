@@ -1,6 +1,6 @@
 {
   "name": "sunrit",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A portfolio card to know more about me (Sunrit Jana)",
   "main": "index.js",
   "bin": {
