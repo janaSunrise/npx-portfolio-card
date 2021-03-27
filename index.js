@@ -119,15 +119,10 @@ const me = boxen(
         `${data.labelCard}  ${data.npx}`,
         ``,
         `${chalk.hex('#08e8de').bold(
-            "Hi there! I'm Sunrit. A passionate ML developer, "
+            "Hi there! I'm Sunrit. A passionate ML developer, Hacker and Web developer "
         )}`,
-        `${chalk.hex('#08e8de').bold("Hacker and Web developer from India, and I love to ")}`,
-        `${chalk.hex('#08e8de').bold(
-            "learn things, explore and work on them! "
-        )}`,
-        `${chalk.hex('#08e8de').bold(
-            "Toss me an email or twitter DM if you want to contact or work!"
-        )}`
+        `${chalk.hex('#08e8de').bold("from India, and I love to learn things, explore and work on them! ")}`,
+        `${chalk.hex('#08e8de').bold("Toss me an email or twitter DM if you want to contact or work!")}`
     ].join("\n"),
     {
         margin: 1,
@@ -152,7 +147,7 @@ const tip = [
 if(process.stdout.columns < 95){
     tip.push(...[
         `Easter TIP: ${chalk.cyanBright.bold(
-            "Adjust your terminal to keep it more than 95 columns to get an awesome art."
+            "Adjust your terminal to more than 95 columns to get an awesome art."
         )}`,
         ''
     ]);
