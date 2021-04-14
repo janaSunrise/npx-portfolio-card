@@ -136,7 +136,7 @@ const me = boxen(
 // Show the boxen
 console.log(me);
 
-// Show a tip
+// Show the tips
 const tip = [
     `Tip: ${chalk.cyanBright.bold(
         "cmd/ctrl + click"
@@ -146,7 +146,7 @@ const tip = [
 
 if(process.stdout.columns < 95){
     tip.push(...[
-        `Easter TIP: ${chalk.cyanBright.bold(
+        `Quick TIP: ${chalk.greenBright.bold(
             "Adjust your terminal to more than 95 columns to get an awesome art."
         )}`,
         ''
@@ -187,4 +187,3 @@ const questions = [{
 
 // Handle prompts
 prompt(questions).then(answer => answer.action());
-
