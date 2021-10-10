@@ -86,9 +86,11 @@ const data = {
   name: name,
   handle: chalk.white('@janaSunrise'),
   title: chalk.hex('#6495ED')(
-    'ML and Web developer and a cybersecurity enthusiast.'
+    'A Machine learning expert, Full-stack developer and Budding Ethical hacker'
   ),
-  fact: chalk.hex('#00FFFF')('I love watching animes and learning new things!'),
+  fact: chalk.hex('#00FFFF')(
+    'I love watching animes, explore, learn and build something incredible!'
+  ),
   email: chalk.hex('#5887FF')('mailto:warriordefenderz@gmail.com'),
   discord: chalk.hex('#44BBA4')('https://discord.com/users/711194921683648523'),
   twitter: chalk.hex('#55C1FF')('https://twitter.com/janaSunrise'),
@@ -118,29 +120,34 @@ const me = boxen(
     ``,
     `${data.labelFact}  ${data.fact}`,
     ``,
-    `${data.labelEmail}  ${data.email}`,
-    `${data.labelDiscord}  ${data.discord}`,
-    `${data.labelTwitter}  ${data.twitter}`,
-    `${data.labelGitHub}  ${data.github}`,
+    `${data.labelEmail}     ${data.email}`,
+    `${data.labelDiscord}   ${data.discord}`,
+    `${data.labelTwitter}   ${data.twitter}`,
+    `${data.labelGitHub}    ${data.github}`,
     `${data.labelHashnode}  ${data.hashnode}`,
     `${data.labelLinkedin}  ${data.linkedin}`,
-    `${data.labelWebsite}  ${data.website}`,
+    `${data.labelWebsite}   ${data.website}`,
     ``,
     `${data.labelCard}  ${data.npx}`,
     ``,
     `${chalk
       .hex('#08e8de')
       .bold(
-        "Hi there! I'm Sunrit. A passionate ML developer, Hacker and Web developer "
+        "Hi there! I'm Sunrit. A ML expert, Full stack web developer and an Ethical"
       )}`,
     `${chalk
       .hex('#08e8de')
       .bold(
-        'from India, and I love to learn things, explore and work on them! '
+        'hacker from India. I love to explore, learn, innovate and build stuff!'
       )}`,
     `${chalk
       .hex('#08e8de')
-      .bold('Toss me an email or twitter DM if you want to contact or work!')}`
+      .bold(
+        'Always trying to explore, learn, innovate, build and become better every day!'
+      )}`,
+    `${chalk
+      .hex('#08e8de')
+      .bold('Toss me an email or Twitter DM if you want to contact or work!')}`
   ].join('\n'),
   {
     margin: 1,
