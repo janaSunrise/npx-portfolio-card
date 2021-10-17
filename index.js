@@ -79,18 +79,14 @@ let name;
 if (process.stdout.columns >= 95) {
   name = chalk.bold(generate('                        Sunrit Jana ⬢'));
 } else {
-  name = chalk.bold.blueBright('                        Sunrit Jana ⬢');
+  name = chalk.bold.cyanBright('                        Sunrit Jana ⬢');
 }
 
 const data = {
   name: name,
   handle: chalk.white('@janaSunrise'),
-  title: chalk.hex('#6495ED')(
-    'A Machine learning expert, Full-stack developer and Budding Ethical hacker'
-  ),
-  fact: chalk.hex('#00FFFF')(
-    'I love watching animes, explore, learn and build something incredible!'
-  ),
+  title: chalk.hex('#6495ED')('Machine learning developer & Full-stack dev'),
+  fact: chalk.hex('#00FFFF')('I love to watch animes, and open source!'),
   email: chalk.hex('#5887FF')('mailto:warriordefenderz@gmail.com'),
   discord: chalk.hex('#44BBA4')('https://discord.com/users/711194921683648523'),
   twitter: chalk.hex('#55C1FF')('https://twitter.com/janaSunrise'),
@@ -100,16 +96,16 @@ const data = {
   website: chalk.hex('#9FFFCB')('https://sunritjana.now.sh'),
   npx: chalk.hex('#06D6A0')('npx sunrit'),
 
-  labelTitle: chalk.hex('#6a8ed2').bold('    Title:'),
-  labelFact: chalk.hex('#2bfbaa').bold('     Fun Fact:'),
-  labelEmail: chalk.hex('#12c2e9').bold('          Email:'),
-  labelDiscord: chalk.hex('#7AE582').bold('        Discord:'),
-  labelTwitter: chalk.hex('#28DCD4').bold('        Twitter:'),
-  labelGitHub: chalk.hex('#C0BABC').bold('         GitHub:'),
-  labelHashnode: chalk.hex('#A959FF').bold('       Hashnode:'),
-  labelLinkedin: chalk.hex('#F8C537').bold('       LinkedIn:'),
-  labelWebsite: chalk.hex('#59FFC8').bold('        Website:'),
-  labelCard: chalk.hex('#76e600').bold('                  Card:')
+  labelTitle: chalk.hex('#6a8ed2').bold('       Title:'),
+  labelFact: chalk.hex('#2bfbaa').bold('    Fun Fact:'),
+  labelEmail: chalk.hex('#12c2e9').bold('       Email:'),
+  labelTwitter: chalk.hex('#28DCD4').bold('     Twitter:'),
+  labelGitHub: chalk.hex('#C0BABC').bold('      GitHub:'),
+  labelDiscord: chalk.hex('#7AE582').bold('     Discord:'),
+  labelHashnode: chalk.hex('#A959FF').bold('    Hashnode:'),
+  labelLinkedin: chalk.hex('#F8C537').bold('    Linkedin:'),
+  labelWebsite: chalk.hex('#59FFC8').bold('     Website:'),
+  labelCard: chalk.hex('#76e600').bold('        Card:')
 };
 
 const me = boxen(
@@ -120,34 +116,28 @@ const me = boxen(
     ``,
     `${data.labelFact}  ${data.fact}`,
     ``,
-    `${data.labelEmail}     ${data.email}`,
-    `${data.labelDiscord}   ${data.discord}`,
-    `${data.labelTwitter}   ${data.twitter}`,
-    `${data.labelGitHub}    ${data.github}`,
+    `${data.labelEmail}  ${data.email}`,
+    `${data.labelTwitter}  ${data.twitter}`,
+    `${data.labelGitHub}  ${data.github}`,
+    `${data.labelDiscord}  ${data.discord}`,
     `${data.labelHashnode}  ${data.hashnode}`,
     `${data.labelLinkedin}  ${data.linkedin}`,
-    `${data.labelWebsite}   ${data.website}`,
+    `${data.labelWebsite}  ${data.website}`,
     ``,
     `${data.labelCard}  ${data.npx}`,
     ``,
-    `${chalk
-      .hex('#08e8de')
-      .bold(
-        "Hi there! I'm Sunrit. A ML expert, Full stack web developer and an Ethical"
-      )}`,
-    `${chalk
-      .hex('#08e8de')
-      .bold(
-        'hacker from India. I love to explore, learn, innovate and build stuff!'
-      )}`,
-    `${chalk
-      .hex('#08e8de')
-      .bold(
-        'Always trying to explore, learn, innovate, build and become better every day!'
-      )}`,
-    `${chalk
-      .hex('#08e8de')
-      .bold('Toss me an email or Twitter DM if you want to contact or work!')}`
+    `${chalk.bold(
+      "Hi there! I'm Sunrit. I'm a passionate ML expert, Full stack"
+    )}`,
+    `${chalk.bold(
+      'web developer and an Ethical hacker from India. I love to'
+    )}`,
+    `${chalk.bold(
+      'explore, learn, innovate and build stuff! Feel free to toss'
+    )}`,
+    `${chalk.bold(
+      'me an email or Twitter DM if you want to get in touch or collab!'
+    )}`
   ].join('\n'),
   {
     margin: 1,
@@ -173,7 +163,7 @@ if (process.stdout.columns < 95) {
   tip.push(
     ...[
       `Quick TIP: ${chalk.greenBright.bold(
-        'Adjust your terminal to more than 95 columns to get an awesome art.'
+        'Make your terminal wider to get an awesome art.'
       )}`,
       ''
     ]
@@ -209,9 +199,9 @@ const questions = [
         }
       },
       {
-        name: 'Exit! 👋',
+        name: 'Exit 👋',
         value: () => {
-          console.log('👋 See you later! Have a nice day\n');
+          console.log('👋 Catch you later, Have a nice day!\n');
         }
       }
     ]
