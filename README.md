@@ -2,16 +2,20 @@
 
 A npx program to give info about me in the terminal!
 
-**How to use?**
+## Usage
 
-Use `npx sunrit` to know me!
+Use the following command to get started!
 
-### Show your support
+```sh
+npx sunrit
+```
 
-Be sure to leave a ⭐ if you like the project!
-
-### Credits
-
+## Credits
 Thanks to this [article](https://dev.to/harshhhdev/creating-a-npx-introduction-card-782) which I used to make my own 
 NPX card.
 
+## 🙌 Show your support
+
+Be sure to leave a ⭐️ if you like the project!
+
+<div align="center">Made by Sunrit Jana with ❤</div>
