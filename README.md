@@ -16,6 +16,6 @@ NPX card.
 
 ## 🙌 Show your support
 
-Be sure to leave a ⭐️ if you like the project!
+Be sure to drop a 🌟 if you like the project!
 
 <div align="center">Made by Sunrit Jana with ❤</div>
